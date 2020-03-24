@@ -1,0 +1,7 @@
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\P13-ForEncadeado\bin\Debug\P13-ForEncadeado.exe.config
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\P13-ForEncadeado\bin\Debug\P13-ForEncadeado.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\P13-ForEncadeado\bin\Debug\P13-ForEncadeado.pdb
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\P13-ForEncadeado\obj\Debug\P13-ForEncadeado.csprojAssemblyReference.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\P13-ForEncadeado\obj\Debug\P13-ForEncadeado.csproj.CoreCompileInputs.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\P13-ForEncadeado\obj\Debug\P13-ForEncadeado.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\P13-ForEncadeado\obj\Debug\P13-ForEncadeado.pdb

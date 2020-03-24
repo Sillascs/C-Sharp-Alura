@@ -1,0 +1,7 @@
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-AliquotaComIfs\bin\Debug\Opcional-AliquotaComIfs.exe.config
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-AliquotaComIfs\bin\Debug\Opcional-AliquotaComIfs.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-AliquotaComIfs\bin\Debug\Opcional-AliquotaComIfs.pdb
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-AliquotaComIfs\obj\Debug\Opcional-AliquotaComIfs.csprojAssemblyReference.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-AliquotaComIfs\obj\Debug\Opcional-AliquotaComIfs.csproj.CoreCompileInputs.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-AliquotaComIfs\obj\Debug\Opcional-AliquotaComIfs.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-AliquotaComIfs\obj\Debug\Opcional-AliquotaComIfs.pdb

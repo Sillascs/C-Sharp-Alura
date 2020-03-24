@@ -1,0 +1,7 @@
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\1-PrimeiroProjeto\3-CriandoVariaveisPontoFlutante\bin\Debug\3-CriandoVariaveisPontoFlutante.exe.config
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\1-PrimeiroProjeto\3-CriandoVariaveisPontoFlutante\bin\Debug\3-CriandoVariaveisPontoFlutante.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\1-PrimeiroProjeto\3-CriandoVariaveisPontoFlutante\bin\Debug\3-CriandoVariaveisPontoFlutante.pdb
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\1-PrimeiroProjeto\3-CriandoVariaveisPontoFlutante\obj\Debug\3-CriandoVariaveisPontoFlutante.csprojAssemblyReference.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\1-PrimeiroProjeto\3-CriandoVariaveisPontoFlutante\obj\Debug\3-CriandoVariaveisPontoFlutante.csproj.CoreCompileInputs.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\1-PrimeiroProjeto\3-CriandoVariaveisPontoFlutante\obj\Debug\3-CriandoVariaveisPontoFlutante.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\1-PrimeiroProjeto\3-CriandoVariaveisPontoFlutante\obj\Debug\3-CriandoVariaveisPontoFlutante.pdb

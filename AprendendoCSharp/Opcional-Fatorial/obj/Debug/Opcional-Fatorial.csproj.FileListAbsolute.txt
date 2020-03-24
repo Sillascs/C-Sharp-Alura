@@ -1,0 +1,7 @@
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-Fatorial\bin\Debug\Opcional-Fatorial.exe.config
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-Fatorial\bin\Debug\Opcional-Fatorial.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-Fatorial\bin\Debug\Opcional-Fatorial.pdb
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-Fatorial\obj\Debug\Opcional-Fatorial.csprojAssemblyReference.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-Fatorial\obj\Debug\Opcional-Fatorial.csproj.CoreCompileInputs.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-Fatorial\obj\Debug\Opcional-Fatorial.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\AprendendoCSharp\Opcional-Fatorial\obj\Debug\Opcional-Fatorial.pdb
