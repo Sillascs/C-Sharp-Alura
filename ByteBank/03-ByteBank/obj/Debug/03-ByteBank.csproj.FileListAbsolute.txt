@@ -1,0 +1,6 @@
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\ByteBank\03-ByteBank\bin\Debug\03-ByteBank.exe.config
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\ByteBank\03-ByteBank\bin\Debug\03-ByteBank.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\ByteBank\03-ByteBank\bin\Debug\03-ByteBank.pdb
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\ByteBank\03-ByteBank\obj\Debug\03-ByteBank.csproj.CoreCompileInputs.cache
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\ByteBank\03-ByteBank\obj\Debug\03-ByteBank.exe
+C:\Users\Sillas\Documents\Cursos\Alura\C-Sharp-Alura\ByteBank\03-ByteBank\obj\Debug\03-ByteBank.pdb
