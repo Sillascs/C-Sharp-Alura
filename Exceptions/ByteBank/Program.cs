@@ -10,43 +10,49 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
-            Metodo();
-            Console.ReadLine();
-        }
-        //Teste com a cadeia de chamada:
-        //Metodo -> TestaDivisao -> Dividir
-        private static void Metodo()
-        {
             try
             {
-                TestaDivisao(0);
+                Metodo();
             }
-            catch (NullReferenceException excecao)
+            //"e" ou "ex" é uma convenção usada para exceções
+            catch (DivideByZeroException e)
             {
-                Console.WriteLine(excecao.Message);
-                Console.WriteLine(excecao.StackTrace);
+                Console.WriteLine("Não é possível divisão por 0");
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+            }
+            Console.ReadLine();
+        }
+        private static void Metodo()
+        {
+            TestaDivisao(0);
         }
 
         private static void TestaDivisao(int divisor)
         {
-            try
-            {
-                int resultado = Dividir(10, divisor);
-                Console.WriteLine("Resultado da divisão de 10 por " + divisor + " é " + resultado);
-            }
-            catch (DivideByZeroException excecao)
-            {
-                Console.WriteLine(excecao.Message);
-                Console.WriteLine(excecao.StackTrace);
-            }
+            int resultado = Dividir(10, divisor);
+            Console.WriteLine("Resultado da divisão de 10 por " + divisor + " é " + resultado);
         }
 
         private static int Dividir(int numero, int divisor)
         {
-            ContaCorrente conta = null;
-            Console.WriteLine(conta.Saldo);
-            return numero / divisor;
+            try
+            {
+                //ContaCorrente conta = null;
+                //Console.WriteLine(conta.Saldo);
+                return numero / divisor;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Exceção com numero=" + numero + " e divisor=" + divisor);
+                //sem o throw o metodo Dividir não passaria a informação do erro de DivideByZeroException para o Main tratar
+                //pois o throw relança a exceção
+                throw;
+            }
+            
         }
     }
 }
