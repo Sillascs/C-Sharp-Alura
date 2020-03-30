@@ -12,9 +12,25 @@ namespace ByteBank
         {
             try
             {
-                Metodo();
+                ContaCorrente conta = new ContaCorrente(0, 0);
             }
             //"e" ou "ex" é uma convenção usada para exceções
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine("Argumento com problema" + ex.ParamName);
+                Console.WriteLine("Ocorreu uma exceção do tipo ArgumentException");
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+            }
+
+            try
+            {
+                Metodo();
+            }
             catch (DivideByZeroException e)
             {
                 Console.WriteLine("Não é possível divisão por 0");
