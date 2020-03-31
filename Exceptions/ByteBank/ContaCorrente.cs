@@ -1,4 +1,4 @@
-﻿// using _05_ByteBank;
+﻿// msdn é a documentação para o c#
 
 using System;
 
@@ -16,10 +16,7 @@ namespace ByteBank
         //trazendo segurança de que ele não poderá ser alterado
         public int Numero { get; }
         public int Agencia { get; }
-                
-
         private double _saldo = 100;
-
         public double Saldo
         {
             get
@@ -36,7 +33,6 @@ namespace ByteBank
                 _saldo = value;
             }
         }
-
 
         public ContaCorrente(int agencia, int numero)
         {
@@ -56,16 +52,18 @@ namespace ByteBank
             TaxaOperacao = 30 / TotalDeContasCriadas;
         }
 
-
-        public bool Sacar(double valor)
+        public void Sacar(double valor)
         {
+            if (valor < 0)
+            {
+                throw new ArgumentException("Valor inválido para saque.", nameof(valor));
+            }
             if (_saldo < valor)
             {
-                return false;
+                throw new SaldoInsuficientException(Saldo, valor);
             }
 
             _saldo -= valor;
-            return true;
         }
 
         public void Depositar(double valor)
@@ -73,17 +71,16 @@ namespace ByteBank
             _saldo += valor;
         }
 
-
-        public bool Transferir(double valor, ContaCorrente contaDestino)
+        public void Transferir(double valor, ContaCorrente contaDestino)
         {
             if (_saldo < valor)
             {
-                return false;
+                throw new ArgumentException("Valor inválido para transferência.", nameof(valor));
             }
 
-            _saldo -= valor;
+            //utilizando a logica de sacar pois ambas possuem a mesma finalidade "_saldo -= valor;"
+            Sacar(valor);
             contaDestino.Depositar(valor);
-            return true;
         }
     }
 }
