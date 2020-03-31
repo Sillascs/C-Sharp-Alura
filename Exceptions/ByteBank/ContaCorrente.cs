@@ -7,6 +7,8 @@ namespace ByteBank
     public class ContaCorrente
     {
         public Cliente Titular { get; set; }
+        public int ContadorSaquesNaoPermitidos { get; private set; }
+        public int ContadorTransferenciasNaoPermitidas { get; private set; }
         public static int TaxaOperacao;
         public static int TotalDeContasCriadas { get; private set; }
         
@@ -60,6 +62,7 @@ namespace ByteBank
             }
             if (_saldo < valor)
             {
+                ContadorSaquesNaoPermitidos++;
                 throw new SaldoInsuficientException(Saldo, valor);
             }
 
@@ -73,13 +76,21 @@ namespace ByteBank
 
         public void Transferir(double valor, ContaCorrente contaDestino)
         {
-            if (_saldo < valor)
+            if (valor < 0)
             {
                 throw new ArgumentException("Valor inválido para transferência.", nameof(valor));
             }
 
-            //utilizando a logica de sacar pois ambas possuem a mesma finalidade "_saldo -= valor;"
-            Sacar(valor);
+            try
+            {
+                //utilizando a logica de sacar pois ambas possuem a mesma finalidade "_saldo -= valor;"
+                Sacar(valor);
+            }
+            catch (SaldoInsuficientException ex)
+            {
+                ContadorTransferenciasNaoPermitidas++;
+                throw new OperacaoFinanceiraException("Operação inválida.", ex);
+            }
             contaDestino.Depositar(valor);
         }
     }

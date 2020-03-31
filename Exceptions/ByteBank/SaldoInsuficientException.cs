@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ByteBank
 {
-    public class SaldoInsuficientException : Exception
+    public class SaldoInsuficientException : OperacaoFinanceiraException
     {
         public double Saldo { get; }
         public double ValorSaque { get; }
-        //é uma convenção no .NET criar um construtor sem argumentos para os tipos de exceções 
+        //é uma convenção no .NET criar os construtores padrão da classe de Exception 
         public SaldoInsuficientException()
         {
         }
@@ -22,6 +22,10 @@ namespace ByteBank
             ValorSaque = valorSaque;
         }
         public SaldoInsuficientException(string mensagem) : base(mensagem)
+        {
+        }
+
+        public SaldoInsuficientException(string mensagem, Exception excecaoInterna) : base(mensagem, excecaoInterna)
         {
         }
     }

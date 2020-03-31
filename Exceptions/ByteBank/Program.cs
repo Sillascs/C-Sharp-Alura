@@ -19,24 +19,40 @@ namespace ByteBank
                 //conta.Sacar(600);
                 //conta.Sacar(-10);
                 conta2.Transferir(1000, conta);
+                //conta2.Transferir(-10, conta);
             }
             //"e" ou "ex" é uma convenção usada para exceções
+            catch (OperacaoFinanceiraException e)
+            {
+                Console.WriteLine(e.Message);
+
+                try
+                {
+                    //Informações da INNER EXCEPTION (exceção interna):
+                    Console.WriteLine(e.InnerException.StackTrace);
+                    
+                }
+                catch (NullReferenceException)
+                {
+                    Console.WriteLine(e.StackTrace);
+                }
+            }
             catch (ArgumentException ex)
             {
                 Console.WriteLine("Argumento com problema " + ex.ParamName);
                 Console.WriteLine("Ocorreu uma exceção do tipo ArgumentException");
                 Console.WriteLine(ex.Message);
             }
-            catch (SaldoInsuficientException ex)
-            {
-                Console.WriteLine("Ocorreu uma exceção do tipo SaldoInsuficientException");
-                Console.WriteLine(ex.Message);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
-            }
+            //catch (SaldoInsuficientException ex)
+            //{
+            //    Console.WriteLine("Ocorreu uma exceção do tipo SaldoInsuficientException");
+            //    Console.WriteLine(ex.Message);
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //    Console.WriteLine(e.StackTrace);
+            //}
 
             //try
             //{
@@ -69,8 +85,6 @@ namespace ByteBank
         {
             try
             {
-                //ContaCorrente conta = null;
-                //Console.WriteLine(conta.Saldo);
                 return numero / divisor;
             }
             catch (Exception)
