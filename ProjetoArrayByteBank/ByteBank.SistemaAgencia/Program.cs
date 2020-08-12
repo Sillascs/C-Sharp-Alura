@@ -16,7 +16,7 @@ namespace ByteBank.SistemaAgencia
             {
                 new ContaCorrente(675, 34435),
                 new ContaCorrente(675, 45665),
-                new ContaCorrente(675, 52197),
+                new ContaCorrente(675, 52197)
             };
 
             for (int indice = 0; indice < contas.Length; indice++)
